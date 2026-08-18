@@ -13,6 +13,56 @@
   html { scroll-behavior: smooth; }
   a { text-decoration: none; }
   a[href$=".html"]:hover, a[target="_blank"]:hover { color: var(--color-accent); }
+
+  .hero-cover {
+    position: relative;
+    width: 100%;
+    height: 92vh;
+    min-height: 560px;
+    max-height: 920px;
+    overflow: hidden;
+    background: var(--color-neutral-900);
+  }
+  .hero-cover__img {
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: 50% 30%;
+    display: block;
+  }
+  .hero-cover__scrim {
+    position: absolute; inset: 0;
+    background: linear-gradient(to bottom, rgba(20,18,16,0.45) 0%, rgba(20,18,16,0) 34%, rgba(20,18,16,0) 58%, rgba(20,18,16,0.6) 100%);
+  }
+  .hero-cover__content {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+    text-align: center; color: #fff;
+    padding: clamp(28px, 5vw, 56px) 20px;
+  }
+  .hero-cover__kicker {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase;
+    text-shadow: 0 1px 12px rgba(0,0,0,0.35);
+    opacity: 0; animation: cover-fade-up 0.9s 0.15s ease forwards;
+  }
+  .hero-cover__title {
+    font-size: clamp(52px, 9vw, 108px); line-height: 1; letter-spacing: -0.01em;
+    margin: 0; text-shadow: 0 2px 24px rgba(0,0,0,0.35);
+    opacity: 0; animation: cover-fade-up 0.9s 0.35s ease forwards;
+  }
+  .hero-cover__scroll {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-body); font-size: 13px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+    color: #fff; border: 1px solid rgba(255,255,255,0.6); border-radius: 999px;
+    padding: 11px 22px; backdrop-filter: blur(2px);
+    opacity: 0; animation: cover-fade-up 0.9s 0.55s ease forwards;
+  }
+  .hero-cover__scroll:hover { background: rgba(255,255,255,0.14); border-color: #fff; color: #fff; }
+  @keyframes cover-fade-up {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-cover__kicker, .hero-cover__title, .hero-cover__scroll { animation: none; opacity: 1; }
+  }
 </style>
 </head>
 <body>
@@ -29,19 +79,23 @@
     </div>
   </div>
 
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(32px, 5vw, 72px); align-items: center; padding: clamp(44px, 7vw, 104px) clamp(20px, 6vw, 80px);">
-    <div>
-      <div style="font-size: 12px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--color-accent-2-700);">Freitag, 29. Mai 2026</div>
-      <h1 style="font-size: clamp(44px, 6.6vw, 84px); line-height: 1.02; letter-spacing: -0.02em; margin: 24px 0 0;">Milena<br>&amp; Alex</h1>
-      <p style="font-size: clamp(18px, 1.7vw, 21px); line-height: 1.65; color: var(--color-neutral-700); max-width: 34ch; margin: 26px 0 0;">Wir geben uns das Ja-Wort in der Mühle Arbon und feiern den Abend auf dem Hohen Hirschberg. Alle Angaben zum Tag findet ihr auf diesen Seiten.</p>
-      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 34px;">
-        <a href="programm.html" class="btn btn-primary" style="padding: 13px 26px; font-size: 14px; letter-spacing: 0.06em;">Programm</a>
-        <a href="anfahrt.html" class="btn btn-secondary" style="padding: 13px 26px; font-size: 14px; letter-spacing: 0.06em;">Anfahrt</a>
-      </div>
+  <header class="hero-cover">
+    <img class="hero-cover__img" src="images/LWF_1475_0035.jpg" alt="Milena und Alex">
+    <div class="hero-cover__scrim"></div>
+    <div class="hero-cover__content">
+      <div></div>
+      <h1 class="hero-cover__title">Milena<br>&amp; Alex</h1>
+      <a href="#intro" class="hero-cover__scroll">Mehr erfahren</a>
     </div>
-    <figure style="border-radius: var(--radius-lg); overflow: hidden;">
-      <img class="washed" src="images/apero.jpg" alt="Milena und Alex" style="width: 100%; height: clamp(320px, 44vw, 560px); object-fit: cover;">
-    </figure>
+  </header>
+
+  <div id="intro" style="text-align: center; padding: clamp(48px, 7vw, 96px) clamp(20px, 6vw, 80px) clamp(36px, 5vw, 64px);">
+    <div style="font-size: 12px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--color-accent-2-700);">Freitag, 29. Mai 2026</div>
+    <p style="font-size: clamp(18px, 1.7vw, 21px); line-height: 1.65; color: var(--color-neutral-700); max-width: 46ch; margin: 20px auto 0;">Wir geben uns das Ja-Wort in der Mühle Arbon und feiern den Abend auf dem Hohen Hirschberg. Alle Angaben zum Tag findet ihr auf diesen Seiten.</p>
+    <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 30px;">
+      <a href="programm.html" class="btn btn-primary" style="padding: 13px 26px; font-size: 14px; letter-spacing: 0.06em;">Programm</a>
+      <a href="anfahrt.html" class="btn btn-secondary" style="padding: 13px 26px; font-size: 14px; letter-spacing: 0.06em;">Anfahrt</a>
+    </div>
   </div>
 
   <div style="padding: clamp(40px, 6vw, 84px) clamp(20px, 6vw, 80px); border-top: 1px solid var(--color-divider);">
