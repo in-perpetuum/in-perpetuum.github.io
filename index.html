@@ -8,6 +8,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 <style>
   body { margin: 0; font-size: 17px; }
   html { scroll-behavior: smooth; }
@@ -44,8 +48,8 @@
     opacity: 0; animation: cover-fade-up 0.9s 0.15s ease forwards;
   }
   .hero-cover__title {
-    font-size: clamp(52px, 9vw, 108px); line-height: 1; letter-spacing: -0.01em;
-    margin: 0; text-shadow: 0 2px 24px rgba(0,0,0,0.35);
+    width: clamp(150px, 30vw, 380px); height: auto;
+    filter: drop-shadow(0 0 16px rgba(255,255,255,0.55)) drop-shadow(0 2px 10px rgba(0,0,0,0.25));
     opacity: 0; animation: cover-fade-up 0.9s 0.35s ease forwards;
   }
   .hero-cover__scroll {
@@ -69,7 +73,7 @@
 <div style="min-height: 100vh; background: var(--color-bg);">
 
   <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 28px; flex-wrap: wrap; padding: 26px clamp(20px, 6vw, 80px); border-bottom: 1px solid var(--color-divider);">
-    <a href="index.html" style="font-family: var(--font-heading); font-size: 19px; letter-spacing: 0.02em; color: var(--color-text);">Milena &amp; Alex</a>
+    <a href="index.html" style="display: inline-flex; align-items: center;"><img src="logo/logo_black.png" alt="Milena &amp; Alex" style="height: 26px; width: auto; display: block;"></a>
     <div style="display: flex; gap: clamp(16px, 2.4vw, 34px); flex-wrap: wrap;">
       <a href="programm.html" style="font-size: 12px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-700);">Programm</a>
       <a href="anfahrt.html" style="font-size: 12px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-700);">Anfahrt</a>
@@ -80,11 +84,11 @@
   </div>
 
   <header class="hero-cover">
-    <img class="hero-cover__img" src="images/LWF_1475_0035.jpg" alt="Milena und Alex">
+    <img class="hero-cover__img" src="images/LWF_1538_0041.jpg" alt="Milena und Alex">
     <div class="hero-cover__scrim"></div>
     <div class="hero-cover__content">
       <div></div>
-      <h1 class="hero-cover__title">Milena<br>&amp; Alex</h1>
+      <h1 style="margin: 0;"><img class="hero-cover__title" src="logo/logo_schriftzug_rahmen.png" alt="Milena &amp; Alex"></h1>
       <a href="#intro" class="hero-cover__scroll">Mehr erfahren</a>
     </div>
   </header>
@@ -123,18 +127,18 @@
 
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: clamp(16px, 2vw, 26px); padding: 0 clamp(20px, 6vw, 80px) clamp(44px, 6vw, 88px);">
     <figure style="border-radius: var(--radius-lg); overflow: hidden;">
-      <img class="washed" src="images/ceremony.jpg" alt="" style="width: 100%; height: 260px; object-fit: cover;">
+      <img src="images/LWF_1606_0053.jpg" alt="" style="width: 100%; height: 260px; object-fit: cover;">
     </figure>
     <figure style="border-radius: var(--radius-lg); overflow: hidden;">
-      <img class="washed" src="images/apero1.jpg" alt="" style="width: 100%; height: 260px; object-fit: cover;">
+      <img src="images/apero1.jpg" alt="" style="width: 100%; height: 260px; object-fit: cover;">
     </figure>
     <figure style="border-radius: var(--radius-lg); overflow: hidden;">
-      <img class="washed" src="images/travel.jpg" alt="" style="width: 100%; height: 260px; object-fit: cover;">
+      <img src="images/travel.jpg" alt="" style="width: 100%; height: 260px; object-fit: cover;">
     </figure>
   </div>
 
   <div style="background: var(--color-surface); padding: clamp(36px, 5vw, 64px) clamp(20px, 6vw, 80px); display: flex; align-items: baseline; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
-    <div style="font-family: var(--font-heading); font-size: clamp(24px, 3vw, 34px); letter-spacing: -0.01em;">Milena &amp; Alex</div>
+    <a href="index.html" style="display: inline-flex; align-items: center;"><img src="logo/logo_schriftzug_seitlich_crop.png" alt="Milena &amp; Alex" style="height: 26px; width: auto; display: block;"></a>
     <div style="font-size: 15px; color: var(--color-neutral-700);">29. Mai 2026 · Wir freuen uns auf euch</div>
   </div>
 
