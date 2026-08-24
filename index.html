@@ -48,7 +48,8 @@
     opacity: 0; animation: cover-fade-up 0.9s 0.15s ease forwards;
   }
   .hero-cover__title {
-    width: clamp(150px, 30vw, 380px); height: auto;
+    width: 240px; height: auto;
+    margin-top: 8px;
     filter: drop-shadow(0 0 16px rgba(255,255,255,0.55)) drop-shadow(0 2px 10px rgba(0,0,0,0.25));
     opacity: 0; animation: cover-fade-up 0.9s 0.35s ease forwards;
   }
@@ -72,14 +73,22 @@
 <body>
 <div style="min-height: 100vh; background: var(--color-bg);">
 
-  <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 28px; flex-wrap: wrap; padding: 26px clamp(20px, 6vw, 80px); border-bottom: 1px solid var(--color-divider);">
+  <div class="site-nav" style="display: flex; align-items: baseline; justify-content: space-between; gap: 28px; flex-wrap: wrap; padding: 26px clamp(20px, 6vw, 80px); border-bottom: 1px solid var(--color-divider);">
     <a href="index.html" style="display: inline-flex; align-items: center;"><img src="logo/logo_black.png" alt="Milena &amp; Alex" style="height: 26px; width: auto; display: block;"></a>
-    <div style="display: flex; gap: clamp(16px, 2.4vw, 34px); flex-wrap: wrap;">
+    <div class="site-nav-links" style="display: flex; gap: clamp(16px, 2.4vw, 34px); flex-wrap: wrap;">
       <a href="programm.html" style="font-size: 12px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-700);">Programm</a>
       <a href="anfahrt.html" style="font-size: 12px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-700);">Anfahrt</a>
       <a href="unterkunft.html" style="font-size: 12px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-700);">Unterkunft</a>
       <a href="geschenke.html" style="font-size: 12px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-700);">Geschenke</a>
       <a href="brautpaar.html" style="font-size: 12px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-700);">Kontakte</a>
+    </div>
+    <button class="site-nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="site-nav-dropdown">
+      <a href="programm.html">Programm</a>
+      <a href="anfahrt.html">Anfahrt</a>
+      <a href="unterkunft.html">Unterkunft</a>
+      <a href="geschenke.html">Geschenke</a>
+      <a href="brautpaar.html">Kontakte</a>
     </div>
   </div>
 
@@ -138,10 +147,10 @@
       <img src="images/LWF_1606_0053.jpg" alt="" style="width: 100%; height: 260px; object-fit: cover;">
     </figure>
     <figure style="border-radius: var(--radius-lg); overflow: hidden;">
-      <img src="images/apero1.jpg" alt="" style="width: 100%; height: 260px; object-fit: cover;">
+      <img src="images/LWF_1346_0007.jpg" alt="" style="width: 100%; height: 260px; object-fit: cover;">
     </figure>
     <figure style="border-radius: var(--radius-lg); overflow: hidden;">
-      <img src="images/travel.jpg" alt="" style="width: 100%; height: 260px; object-fit: cover;">
+      <img src="images/LWF_1425_0023.jpg" alt="" style="width: 100%; height: 260px; object-fit: cover;">
     </figure>
   </div>
 
@@ -151,5 +160,6 @@
   </div>
 
 </div>
+<script src="nav.js" defer></script>
 </body>
 </html>
