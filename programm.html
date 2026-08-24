@@ -16,7 +16,7 @@
   body { margin: 0; font-size: 17px; }
   html { scroll-behavior: smooth; }
   a { text-decoration: none; }
-  a[href$=".html"]:hover, a[target="_blank"]:hover { color: var(--color-accent); }
+  a[href$=".html"]:hover, a[target="_blank"]:hover { color: var(--color-accent-2); }
 </style>
 </head>
 
@@ -26,7 +26,7 @@
   <div class="site-nav" style="display: flex; align-items: baseline; justify-content: space-between; gap: 28px; flex-wrap: wrap; padding: 26px clamp(20px, 6vw, 80px); border-bottom: 1px solid var(--color-divider);">
     <a href="index.html" style="display: inline-flex; align-items: center;"><img src="logo/logo_schriftzug_seitlich_crop.png" alt="Milena &amp; Alex" style="height: 26px; width: auto; display: block;"></a>
     <div class="site-nav-links" style="display: flex; gap: clamp(16px, 2.4vw, 34px); flex-wrap: wrap;">
-      <a href="programm.html" style="font-size: 12px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent-700);">Programm</a>
+      <a href="programm.html" style="font-size: 12px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent-2-700);">Programm</a>
       <a href="anfahrt.html" style="font-size: 12px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-700);">Anfahrt</a>
       <a href="unterkunft.html" style="font-size: 12px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-700);">Unterkunft</a>
       <a href="geschenke.html" style="font-size: 12px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-700);">Geschenke</a>
@@ -34,7 +34,7 @@
     </div>
     <button class="site-nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
     <div class="site-nav-dropdown">
-      <a href="programm.html" style="color: var(--color-accent-700); font-weight: 600;">Programm</a>
+      <a href="programm.html" style="color: var(--color-accent-2-700); font-weight: 600;">Programm</a>
       <a href="anfahrt.html">Anfahrt</a>
       <a href="unterkunft.html">Unterkunft</a>
       <a href="geschenke.html">Geschenke</a>
@@ -43,49 +43,49 @@
   </div>
 
   <div style="flex: 1; padding: clamp(40px, 6vw, 88px) clamp(20px, 6vw, 80px); position: relative; overflow: hidden; z-index: 0;">
-    <img src="background/flowers.png" alt="" aria-hidden="true" style="position: absolute; bottom: 0; left: 0; width: 100%; height: auto; opacity: 0.14; z-index: -1; pointer-events: none;">
+    <img src="background/flowers.png" alt="" aria-hidden="true" style="position: absolute; bottom: 0; left: 50%; width: 100%; min-width: 560px; height: auto; opacity: 0.14; z-index: -1; pointer-events: none; transform: translateX(-50%);">
     <h1 style="font-size: clamp(34px, 4.6vw, 58px); line-height: 1.06; letter-spacing: -0.02em; margin: 18px 0 18px;">Programm</h1>
     
-    <div style="font-size: 12px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--color-accent-2-700);">Samstag, 29. Mai 2027</div>
+    <div style="font-size: 12px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--color-accent-700);">Samstag, 29. Mai 2027</div>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(32px, 5vw, 72px); align-items: start; margin-top: clamp(32px, 4vw, 56px);">
       <div style="max-width: 620px;">
         <div style="display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: clamp(14px, 2vw, 28px); align-items: baseline; padding: 22px 0; border-top: 1px solid var(--color-divider);">
-          <div style="font-family: var(--font-heading); font-size: 24px; color: var(--color-accent-700);">1300</div>
+          <div style="font-family: var(--font-heading); font-size: 24px; color: var(--color-accent-2-700);">1300</div>
           <div style="font-size: 20px; color: var(--color-text);">Eintreffen Restaurant Mühle</div>
         </div>
         <div style="display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: clamp(14px, 2vw, 28px); align-items: baseline; padding: 22px 0; border-top: 1px solid var(--color-divider);">
-          <div style="font-family: var(--font-heading); font-size: 24px; color: var(--color-accent-700);">1330</div>
+          <div style="font-family: var(--font-heading); font-size: 24px; color: var(--color-accent-2-700);">1330</div>
           <div style="font-size: 20px; color: var(--color-text);"> Start Trauung</div>
         </div>
         <div style="display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: clamp(14px, 2vw, 28px); align-items: baseline; padding: 22px 0; border-top: 1px solid var(--color-divider);">
-          <div style="font-family: var(--font-heading); font-size: 24px; color: var(--color-accent-700);">1400</div>
+          <div style="font-family: var(--font-heading); font-size: 24px; color: var(--color-accent-2-700);">1400</div>
           <div style="font-size: 20px; color: var(--color-text);">Anschliessender Apero</div>
         </div>
         <div style="display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: clamp(14px, 2vw, 28px); align-items: baseline; padding: 22px 0; border-top: 1px solid var(--color-divider);">
-          <div style="font-family: var(--font-heading); font-size: 24px; color: var(--color-accent-700);">1630</div>
+          <div style="font-family: var(--font-heading); font-size: 24px; color: var(--color-accent-2-700);">1630</div>
           <div style="font-size: 20px; color: var(--color-text);">Abfahrt Richtung Appenzell</div>
         </div>
         <div style="display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: clamp(14px, 2vw, 28px); align-items: baseline; padding: 22px 0; border-top: 1px solid var(--color-divider); border-bottom: 1px solid var(--color-divider);">
-          <div style="font-family: var(--font-heading); font-size: 24px; color: var(--color-accent-700);">1900</div>
+          <div style="font-family: var(--font-heading); font-size: 24px; color: var(--color-accent-2-700);">1900</div>
           <div style="font-size: 20px; color: var(--color-text);">Nachtessen Hoher Hirschberg</div>
         </div>
       </div>
     </div>
 
     <div style="flex: 1; padding: clamp(40px, 6vw, 88px) clamp(20px, 6vw, 80px);"></div>
-    <div style="font-size: 12px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--color-accent-2-700); ">Sonntag, 30. Mai 2027</div>
+    <div style="font-size: 12px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--color-accent-700); ">Sonntag, 30. Mai 2027</div>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(32px, 5vw, 72px); align-items: start; margin-top: clamp(32px, 4vw, 56px);">
       <div style="max-width: 620px;">
         <div style="display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: clamp(14px, 2vw, 28px); align-items: baseline; padding: 22px 0; border-top: 1px solid var(--color-divider);">
-          <div style="font-family: var(--font-heading); font-size: 24px; color: var(--color-accent-700);">0900 </div>
+          <div style="font-family: var(--font-heading); font-size: 24px; color: var(--color-accent-2-700);">0900 </div>
           <div style="font-size: 20px; color: var(--color-text);">Frühstück</div>
         </div>
         <div style="display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: clamp(14px, 2vw, 28px); align-items: baseline; padding: 22px 0; border-top: 1px solid var(--color-divider);">
-          <div style="font-family: var(--font-heading); font-size: 24px; color: var(--color-accent-700);">1000</div>
+          <div style="font-family: var(--font-heading); font-size: 24px; color: var(--color-accent-2-700);">1000</div>
           <div style="font-size: 20px; color: var(--color-text);"> Gemeinsamer Spaziergang nach Appenzell</div>
         </div>
 
-        <p style="font-size: 17px; line-height: 1.65; color: var(--color-neutral-700); margin: 28px 0 0; max-width: 46ch;">Die Adressen der beiden Orte findet ihr unter <a href="anfahrt.html" style="color: var(--color-accent-700); border-bottom: 1px solid var(--color-accent-300);">Anfahrt</a>.</p>
+        <p style="font-size: 17px; line-height: 1.65; color: var(--color-neutral-700); margin: 28px 0 0; max-width: 46ch;">Die Adressen der beiden Orte findet ihr unter <a href="anfahrt.html" style="color: var(--color-accent-800); border-bottom: 1px solid var(--color-accent-800);">Anfahrt</a>.</p>
       </div>
       <figure style="border-radius: var(--radius-lg); overflow: hidden;">
         <img src="images/LWF_1394_0019.jpg" alt="Apéro" style="width: 100%; height: clamp(300px, 40vw, 520px); object-fit: cover;">

@@ -23,21 +23,21 @@
 
   --color-accent-100: #fff2eb;
   --color-accent-200: #ffe1d0;
-  --color-accent-300: #ffc6a5;
+  --color-accent-300: #e4ccc5;
   --color-accent-400: #f6a06b;
-  --color-accent-500: #d67f48;
+  --color-accent-500: #d37a89;
   --color-accent-600: #b2622d;
-  --color-accent-700: #8c491a;
-  --color-accent-800: #643312;
+  --color-accent-700: #7a304c;
+  --color-accent-800: #77344e4b;
   --color-accent-900: #402310;
 
   --color-accent-2-100: #f0fae1;
   --color-accent-2-200: #e1eecc;
-  --color-accent-2-300: #ccdbb2;
+  --color-accent-2-300: #bdbd98;
   --color-accent-2-400: #aebf92;
-  --color-accent-2-500: #8fa073;
+  --color-accent-2-500: #808356;
   --color-accent-2-600: #728157;
-  --color-accent-2-700: #56633f;
+  --color-accent-2-700: #003d20;
   --color-accent-2-800: #3d472b;
   --color-accent-2-900: #272e1b;
 
@@ -121,9 +121,9 @@ figcaption {
 }
 .btn svg { display: block; }
 .btn:disabled { opacity: 0.45; cursor: not-allowed; }
-.btn-primary { background: var(--color-accent); color: var(--color-bg); }
-.btn-primary:hover { background: var(--color-accent-600); }
-.btn-primary:active { background: var(--color-accent-700); }
+.btn-primary { background: var(--color-accent-2-300); color: var(--color-bg); }
+.btn.btn-primary:hover { background: var(--color-accent-2-700); color: #fff; }
+.btn-primary:active { background: var(--color-accent-2-700); }
 .btn-secondary { border-color: var(--color-divider); }
 .btn-secondary:hover { background: color-mix(in srgb, var(--color-text) 7%, transparent); }
 .btn-secondary:active { background: color-mix(in srgb, var(--color-text) 14%, transparent); }

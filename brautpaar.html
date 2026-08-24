@@ -16,7 +16,7 @@
   body { margin: 0; font-size: 17px; }
   html { scroll-behavior: smooth; }
   a { text-decoration: none; }
-  a[href$=".html"]:hover, a[target="_blank"]:hover { color: var(--color-accent); }
+  a[href$=".html"]:hover, a[target="_blank"]:hover { color: var(--color-accent-2); }
 </style>
 </head>
 <body>
@@ -29,7 +29,7 @@
       <a href="anfahrt.html" style="font-size: 12px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-700);">Anfahrt</a>
       <a href="unterkunft.html" style="font-size: 12px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-700);">Unterkunft</a>
       <a href="geschenke.html" style="font-size: 12px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-neutral-700);">Geschenke</a>
-      <a href="brautpaar.html" style="font-size: 12px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent-700);">Kontakte</a>
+      <a href="brautpaar.html" style="font-size: 12px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent-2-700);">Kontakte</a>
     </div>
     <button class="site-nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
     <div class="site-nav-dropdown">
@@ -37,55 +37,55 @@
       <a href="anfahrt.html">Anfahrt</a>
       <a href="unterkunft.html">Unterkunft</a>
       <a href="geschenke.html">Geschenke</a>
-      <a href="brautpaar.html" style="color: var(--color-accent-700); font-weight: 600;">Kontakte</a>
+      <a href="brautpaar.html" style="color: var(--color-accent-2-700); font-weight: 600;">Kontakte</a>
     </div>
   </div>
 
   <div style="flex: 1; padding: clamp(40px, 6vw, 88px) clamp(20px, 6vw, 80px); position: relative; overflow: hidden; z-index: 0;">
-    <img src="background/flowers.png" alt="" aria-hidden="true" style="position: absolute; bottom: 0; left: 0; width: 100%; height: auto; opacity: 0.14; z-index: -1; pointer-events: none;">
-    <div style="font-size: 12px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--color-accent-2-700);">Wer euch begleitet</div>
+    <img src="background/flowers.png" alt="" aria-hidden="true" style="position: absolute; bottom: 0; left: 50%; width: 100%; min-width: 560px; height: auto; opacity: 0.14; z-index: -1; pointer-events: none; transform: translateX(-50%);">
+    <div style="font-size: 12px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--color-accent-700);">Wer euch begleitet</div>
     <h1 style="font-size: clamp(34px, 4.6vw, 58px); line-height: 1.06; letter-spacing: -0.02em; margin: 18px 0 0;">Kontakte</h1>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(20px, 3vw, 34px); margin-top: clamp(32px, 4vw, 56px); max-width: 1000px;">
-      <div class="card elev-sm" style="background: var(--color-neutral-100); border-radius: var(--radius-lg); padding: clamp(26px, 3vw, 40px);">
-        <div style="font-size: 12px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-2-700);">Trauzeugin</div>
-        <h2 style="font-size: clamp(26px, 2.6vw, 34px); letter-spacing: -0.01em; margin: 14px 0 10px;">Cédrine Ruckstuhl</h2>
+      <div class="card elev-sm" style="background: color-mix(in srgb, var(--color-neutral-100) 40%, transparent); border-radius: var(--radius-lg); padding: clamp(26px, 3vw, 40px);">
+        <div style="font-size: 12px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700);">Trauzeugin</div>
+        <h2 style="font-size: clamp(26px, 2.6vw, 34px); color: var(--color-accent-2-700); letter-spacing: -0.01em; margin: 14px 0 10px;">Cédrine Ruckstuhl</h2>
          <p style="font-size: 18px; line-height: 1.6; color: var(--color-neutral-700); margin: 0;">+41 79 123 45 67</p>
           <p style="font-size: 18px; line-height: 1.6; color: var(--color-neutral-700); margin: 0;">c@ruckstuhl.ch</p>
         <p style="font-size: 18px; line-height: 1.6; color: var(--color-neutral-700); margin: 0;">Mühlestrasse 12, 9320 Stachen</p>
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=M%C3%BChlestrasse+12%2C+9320+Stachen" target="_blank" rel="noopener" style="display: inline-block; margin-top: 24px; font-size: 15px; font-weight: 500; color: var(--color-accent-700); border-bottom: 1px solid var(--color-accent-300); padding-bottom: 3px;">In Karten öffnen</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=M%C3%BChlestrasse+12%2C+9320+Stachen" target="_blank" rel="noopener" style="display: inline-block; margin-top: 24px; font-size: 15px; font-weight: 500; color: var(--color-accent-800); border-bottom: 1px solid var(--color-accent-800); padding-bottom: 3px;">In Karten öffnen</a>
       </div>
     </div>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(20px, 3vw, 34px); margin-top: clamp(32px, 4vw, 56px); max-width: 1000px;">
-      <div class="card elev-sm" style="background: var(--color-neutral-100); border-radius: var(--radius-lg); padding: clamp(26px, 3vw, 40px);">
-        <div style="font-size: 12px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-2-700);">Trauzeuge</div>
-        <h2 style="font-size: clamp(26px, 2.6vw, 34px); letter-spacing: -0.01em; margin: 14px 0 10px;">Andreas Brandes</h2>
+      <div class="card elev-sm" style="background: color-mix(in srgb, var(--color-neutral-100) 40%, transparent); border-radius: var(--radius-lg); padding: clamp(26px, 3vw, 40px);">
+        <div style="font-size: 12px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700);">Trauzeuge</div>
+        <h2 style="font-size: clamp(26px, 2.6vw, 34px); color: var(--color-accent-2-700); letter-spacing: -0.01em; margin: 14px 0 10px;">Andreas Brandes</h2>
          <p style="font-size: 18px; line-height: 1.6; color: var(--color-neutral-700); margin: 0;">+41 79 123 45 67</p>
           <p style="font-size: 18px; line-height: 1.6; color: var(--color-neutral-700); margin: 0;">c@ruckstuhl.ch</p>
         <p style="font-size: 18px; line-height: 1.6; color: var(--color-neutral-700); margin: 0;">Mühlestrasse 12, 9320 Stachen</p>
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=M%C3%BChlestrasse+12%2C+9320+Stachen" target="_blank" rel="noopener" style="display: inline-block; margin-top: 24px; font-size: 15px; font-weight: 500; color: var(--color-accent-700); border-bottom: 1px solid var(--color-accent-300); padding-bottom: 3px;">In Karten öffnen</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=M%C3%BChlestrasse+12%2C+9320+Stachen" target="_blank" rel="noopener" style="display: inline-block; margin-top: 24px; font-size: 15px; font-weight: 500; color: var(--color-accent-800); border-bottom: 1px solid var(--color-accent-800); padding-bottom: 3px;">In Karten öffnen</a>
       </div>
     </div>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(20px, 3vw, 34px); margin-top: clamp(32px, 4vw, 56px); max-width: 1000px;">
-      <div class="card elev-sm" style="background: var(--color-neutral-100); border-radius: var(--radius-lg); padding: clamp(26px, 3vw, 40px);">
-        <div style="font-size: 12px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-2-700);">Brautpaar</div>
-        <h2 style="font-size: clamp(26px, 2.6vw, 34px); letter-spacing: -0.01em; margin: 14px 0 10px;">Milena &amp; Alex</h2>
+      <div class="card elev-sm" style="background: color-mix(in srgb, var(--color-neutral-100) 40%, transparent); border-radius: var(--radius-lg); padding: clamp(26px, 3vw, 40px);">
+        <div style="font-size: 12px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700);">Brautpaar</div>
+        <h2 style="font-size: clamp(26px, 2.6vw, 34px); color: var(--color-accent-2-700); letter-spacing: -0.01em; margin: 14px 0 10px;">Milena &amp; Alex</h2>
         <p style="font-size: 18px; line-height: 1.6; color: var(--color-neutral-700); margin: 0;">Treuackerstrasse 11, 9000 St.Gallen</p>
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=Hohe+Hirschbergstrasse+58%2C+9050+Appenzell" target="_blank" rel="noopener" style="display: inline-block; margin-top: 24px; font-size: 15px; font-weight: 500; color: var(--color-accent-700); border-bottom: 1px solid var(--color-accent-300); padding-bottom: 3px;">In Karten öffnen</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Hohe+Hirschbergstrasse+58%2C+9050+Appenzell" target="_blank" rel="noopener" style="display: inline-block; margin-top: 24px; font-size: 15px; font-weight: 500; color: var(--color-accent-800); border-bottom: 1px solid var(--color-accent-800); padding-bottom: 3px;">In Karten öffnen</a>
       </div>
     </div>
 
 
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(32px, 5vw, 72px); align-items: start; margin-top: clamp(32px, 4vw, 56px); max-width: 1040px;">
+    <!-- <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(32px, 5vw, 72px); align-items: start; margin-top: clamp(32px, 4vw, 56px); max-width: 1040px;">
       <div style="border: 1px dashed var(--color-neutral-400); border-radius: var(--radius-lg); padding: clamp(26px, 3vw, 40px);">
         <p style="font-family: ui-monospace, monospace; font-size: 14px; line-height: 1.7; color: var(--color-neutral-600); margin: 0;">Namen und Kontakte folgen — Brautpaar und Trauzeugen.</p>
       </div>
       <figure style="border-radius: var(--radius-lg); overflow: hidden;">
         <img src="images/apero.jpg" alt="Milena und Alex" style="width: 100%; height: clamp(280px, 34vw, 420px); object-fit: cover;">
       </figure>
-    </div>
+    </div> -->
   </div>
 
   <div style="background: var(--color-surface); padding: clamp(36px, 5vw, 64px) clamp(20px, 6vw, 80px); display: flex; align-items: baseline; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
